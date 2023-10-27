@@ -1,0 +1,72 @@
+.card-surat {
+    cursor: pointer;
+    display: block;
+    background-color: #2b436b;
+    border-radius: 4px;
+    z-index: 0;
+    overflow: hidden;
+  
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: -16px;
+      right: -16px;
+      background: #3fbf3f;
+      height: 32px;
+      width: 32px;
+      border-radius: 32px;
+      transform: scale(1);
+      transform-origin: 50% 50%;
+      transition: transform 0.25s ease-out;
+    }
+  
+    &:hover:before {
+      transform: scale(21);
+    }
+  }
+  
+  .card-surat:hover {
+    p {
+      transition: all 0.3s ease-out;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    h3 {
+      transition: all 0.3s ease-out;
+      color: #ffffff;
+    }
+  }
+
+  .body{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_eC05bCvBVaFcr0WrdSzWksxWjNHGoNdfig&usqp=CAU);
+  }
+
+  footer .footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    font-size: 2rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .3s ease;
+    text-decoration: none;
+}
+
+.social-media a:hover{
+    background: #0ef;
+    color: #323946;
+    box-shadow: 0 0 1rem #0ef;
+}
